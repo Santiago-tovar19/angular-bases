@@ -15,10 +15,10 @@ export class ListaComponent {
     'capitan america',
   ];
 
-  public deleteHero: string = '';
+  public deleteHero?: string = '';
 
   removeLastHero(): void {
-    const deleteHero = this.heroesName.pop();
-    console.log(deleteHero);
+    this.deleteHero = this.heroesName.pop();
+    console.log(this.deleteHero);
   }
 }
